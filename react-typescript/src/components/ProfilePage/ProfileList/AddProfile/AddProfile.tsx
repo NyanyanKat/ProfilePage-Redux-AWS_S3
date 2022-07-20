@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 
 import { useSelector, useDispatch } from "react-redux";
-import {
-  sortAndDeduplicateDiagnostics,
-  StringLiteral,
-  validateLocaleAndSetLanguage,
-} from "typescript";
 import ReInputField from "./ReInputField/ReInputField";
 import { addUser, editUser } from "../../../../features/Users";
 import Api from "../../../../api/api";
@@ -31,7 +26,7 @@ export default function AddProfile(props: any) {
 //     setData({ ...data, value });
 //   }
 
-  console.log("data ", data);
+  //console.log("data ", data);
 
   return (
     <div>

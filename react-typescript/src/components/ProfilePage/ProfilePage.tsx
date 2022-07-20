@@ -13,7 +13,6 @@ export default function ProfilePage() {
 
   return (
     <div className="profile">
-      {/* <AddProfile data={data} getData={getData}> </AddProfile> */}
       <div className="left_container">
         <AddProfile></AddProfile>
       </div>

@@ -1,22 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./ReInputField.css"
 
-//import {useSelector, useDispatch} from 'react-redux';
 
 export default function ReInputField({ ...props }) {
   const [input, setInput] = useState(props.value);
   const [valid, setValid] = useState(false);
-//   useEffect(()=>{
-
-//   }, [input])
-
-
-  //    function submitForm(e:any) {
-  //         e.preventDefault();
-  //         if (input.profilePic !== "" && input.name !== "" && input.email !== "" && input.phone !== "") {
-  //             props.getInput(input);
-  //         }
-  //    }
 
   async function handleChange(e: any) {
     e.preventDefault();
@@ -25,10 +13,6 @@ export default function ReInputField({ ...props }) {
     props.getInput(value);
   }
 
-//   function submitInput(e: any) {
-//     e.preventDefault();
-//       props.getInput(input);
-//   }
 
 function checkValid(e:any) {
     switch(props.name) {
@@ -41,12 +25,12 @@ function checkValid(e:any) {
             const re2 = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
             const checkemail = re2.test(String(e.target.value).toLowerCase());
             setValid(checkemail);
-            console.log("check ", checkemail);
+            //console.log("check ", checkemail);
             break;
         case 'phone':
             const re3 = /^\d{3}-\d{3}-\d{4}$/;
             const checkphone = re3.test(e.target.vaue);
-            console.log('checkphone', checkphone)
+            //console.log('checkphone', checkphone)
             setValid(checkphone);
             break;
         default:
@@ -54,7 +38,7 @@ function checkValid(e:any) {
     }
 }
 
-  console.log(input);
+  //console.log(input);
 
   return (
     <div>

@@ -8,9 +8,8 @@ export default function ProfileList(props:any) {
 
     const userList = useSelector((state:any) => state.users.value);
     const dispatch = useDispatch<AppDispatch>();
-    // function deleteAllProfile(e:any) {
-    //     props.setData([]);
-    // }
+   
+    
     useEffect(()=> {
         dispatch(fetchAllUsers());
     }, [dispatch]);
