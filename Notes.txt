@@ -1,0 +1,24 @@
+Backend, frontend: typescript
+S3: for adding or editing user profile with
+an uploaded picture
+
+UserModel:
+pic
+name
+email
+number
+
+Redux: profile list
+
+actions: add/edit/delete/clear
+reducer: add/edit/delete/clear
+
+Reusable components: ReInputField, ProfileCard
+
+
+Redux Lifecycle:
+
+Client sends actions {type, payload} to Store
+Store sends actions/prev State to Reducer
+Reducer update state and sends new state to Store
+Store re-render state to client

@@ -1,0 +1,18 @@
+.left_container {
+    border: 1px solid black;
+    padding: 4px;
+    float:left;
+}
+
+.right_container {
+    border: 1px solid black;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 50px;
+    float:right;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+}
