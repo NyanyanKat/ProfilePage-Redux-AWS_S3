@@ -1,7 +1,10 @@
 .left_container {
     border: 1px solid black;
-    padding: 4px;
+    padding: 2px;
     float:left;
+    justify-content: center;
+    align-items: center;
+    margin-left: 275px;
 }
 
 .right_container {
@@ -10,9 +13,13 @@
     padding-right: 40px;
     margin-left: 50px;
     float:right;
+    justify-content: center;
+    align-items: center;
 }
 
-.profile {
+.userprofile {
     display: flex;
+}
+.profile {
     justify-content: center;
 }

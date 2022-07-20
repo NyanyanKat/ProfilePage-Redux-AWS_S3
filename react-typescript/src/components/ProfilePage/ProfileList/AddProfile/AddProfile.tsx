@@ -30,7 +30,7 @@ export default function AddProfile(props: any) {
 
   return (
     <div>
-          <h2>Add Users</h2>
+          <h2>Add Profile</h2>
           <br />
           <ReInputField
             label="Profile Pic:  "
