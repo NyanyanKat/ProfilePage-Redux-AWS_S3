@@ -86,35 +86,38 @@ export const userSlice = createSlice({
     editUser: (state:any, action) => {
       state.value.map((user: any) => {
         if (user.id === action.payload.id) {
-          //   for (const [key, val] of Object.entries(user)) {
-          //     if (val !== action.payload[val]) {
-          //         key =
-          //     }
-          //   }
+            for (const key of Object.keys(user)) {
+              if (action.payload[key] !== undefined) {
+                user[key] = action.payload[key];
+              }
+              // if (user[key] !== action.payload[key]) {
+              //     user[key] = '2222'
+              // }
+            }
           // if (user.profilePic !== action.payload.profilePic) {
           //     user.profilePic = action.payload.profilePic;
           // }
-          if (
-            user.name !== action.payload.name &&
-            action.payload.name !== "" &&
-            action.payload.name !== undefined
-          ) {
-            user.name = action.payload.name;
-          } 
-          if (
-            user.email !== action.payload.email &&
-            action.payload.email !== "" &&
-            action.payload.email !== undefined
-          ) {
-            user.email = action.payload.email;
-          } 
-          if (
-            user.phone !== action.payload.phone &&
-            action.payload.phone !== "" &&
-            action.payload.phone !== undefined
-          ) {
-            user.phone = action.payload.phone;
-          }
+          // if (
+          //   user.name !== action.payload.name &&
+          //   action.payload.name !== "" &&
+          //   action.payload.name !== undefined
+          // ) {
+          //   user.name = action.payload.name;
+          // } 
+          // if (
+          //   user.email !== action.payload.email &&
+          //   action.payload.email !== "" &&
+          //   action.payload.email !== undefined
+          // ) {
+          //   user.email = action.payload.email;
+          // } 
+          // if (
+          //   user.phone !== action.payload.phone &&
+          //   action.payload.phone !== "" &&
+          //   action.payload.phone !== undefined
+          // ) {
+          //   user.phone = action.payload.phone;
+          // }
         }
       });
     },
