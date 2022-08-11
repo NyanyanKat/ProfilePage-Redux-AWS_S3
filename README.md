@@ -1,6 +1,6 @@
 # 1 About
 
-User profile single page application built with React reusable components, Redux-ToolKit, Express server, CSS, MongoDB, and Amazon S3 API
+User profile single page application built with TypeScript, React reusable components, Redux-ToolKit, Express server, CSS, MongoDB, and Amazon S3 API
 
 # 2 Features
 
